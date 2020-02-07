@@ -1,0 +1,44 @@
+/* Class = "NSWindow"; */
+"aHY-wv-ybN.title" = "Clock Preferences";
+
+/* Class = "NSButtonCell"; */
+"qQF-qd-C27.title" = "Show week number";
+
+/* Class = "NSButtonCell"; */
+"WZS-J9-f4h.title" = "Show Rokuyo";
+
+/* Class = "NSButtonCell"; */
+"gUY-zA-4yp.title" = "Show day of the week";
+
+/* Class = "NSButtonCell"; */
+"HU4-v0-7CW.title" = "Show date";
+
+/* Class = "NSButtonCell"; */
+"Cal-EA-jy3.title" = "Show seconds";
+
+/* Class = "NSButtonCell"; */
+"sgc-uL-vqK.title" = "Show 24-hour clock";
+
+/* Class = "NSButtonCell"; */
+"2m4-4g-tP0.title" = "Show AM/PM";
+
+/* Class = "NSTextFieldCell"; */
+"f2O-O0-ioQ.title" = "Disabled by the time format setting in Language & Region";
+
+/* Class = "NSButtonCell"; */
+"xd1-cX-Ny5.title" = "Quit Clock";
+
+/* Class = "NSMenuItem"; */
+"HmI-3J-dmE.title" = "Monday, February 3, 2020";
+
+/* Class = "NSMenuItem"; */
+"hHg-wJ-k8Q.title" = "Special day item";
+
+/* Class = "NSMenuItem"; */
+"MKg-MQ-6Rs.title" = "Butsumetsu: bad luck whole day";
+
+/* Class = "NSMenuItem"; */
+"iNr-bb-6tw.title" = "Open Clock Preferences...";
+
+/* Class = "NSMenuItem"; */
+"aL8-P5-93N.title" = "Open System Preferences...";

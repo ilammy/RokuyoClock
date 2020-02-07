@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FD4A8B823E77D2200CB145B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD4A8B723E77D2200CB145B /* AppDelegate.m */; };
+		9FD4A8BA23E77D2300CB145B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD4A8B923E77D2300CB145B /* Assets.xcassets */; };
+		9FD4A8BD23E77D2300CB145B /* StatusMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD4A8BB23E77D2300CB145B /* StatusMenu.xib */; };
+		9FD4A8C023E77D2300CB145B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD4A8BF23E77D2300CB145B /* main.m */; };
+		9FD4A8CC23E8149600CB145B /* NSDate+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD4A8CB23E8149600CB145B /* NSDate+Extra.m */; };
+		9FD4A8CF23E856CC00CB145B /* DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD4A8CE23E856CC00CB145B /* DateFormatter.m */; };
+		9FD7A6E923ED08A20065D112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FD7A6E723ED07580065D112 /* InfoPlist.strings */; };
+		9FD7A6EC23ED57540065D112 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FD7A6EE23ED57540065D112 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F22BBEE23ECCC0700FE84FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9F22BBEF23ECD3B200FE84FD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9FD4A8B323E77D2200CB145B /* Rokuyo Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rokuyo Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD4A8B623E77D2200CB145B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9FD4A8B723E77D2200CB145B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9FD4A8B923E77D2300CB145B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FD4A8BC23E77D2300CB145B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StatusMenu.xib; sourceTree = "<group>"; };
+		9FD4A8BF23E77D2300CB145B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FD4A8C123E77D2300CB145B /* Rokuyo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rokuyo.entitlements; sourceTree = "<group>"; };
+		9FD4A8CA23E8149600CB145B /* NSDate+Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extra.h"; sourceTree = "<group>"; };
+		9FD4A8CB23E8149600CB145B /* NSDate+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extra.m"; sourceTree = "<group>"; };
+		9FD4A8CD23E856CC00CB145B /* DateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateFormatter.h; sourceTree = "<group>"; };
+		9FD4A8CE23E856CC00CB145B /* DateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateFormatter.m; sourceTree = "<group>"; };
+		9FD7A6DC23ECFF660065D112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StatusMenu.strings; sourceTree = "<group>"; };
+		9FD7A6E123ED064D0065D112 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD7A6E623ED07580065D112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FD7A6ED23ED57540065D112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FD4A8B023E77D2200CB145B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F22BBF023ECD3CC00FE84FD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9FD4A8B623E77D2200CB145B /* AppDelegate.h */,
+				9FD4A8B723E77D2200CB145B /* AppDelegate.m */,
+				9FD4A8CD23E856CC00CB145B /* DateFormatter.h */,
+				9FD4A8CE23E856CC00CB145B /* DateFormatter.m */,
+				9FD4A8CA23E8149600CB145B /* NSDate+Extra.h */,
+				9FD4A8CB23E8149600CB145B /* NSDate+Extra.m */,
+				9FD4A8BF23E77D2300CB145B /* main.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9F22BBF123ECD43400FE84FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FD4A8B923E77D2300CB145B /* Assets.xcassets */,
+				9FD4A8C123E77D2300CB145B /* Rokuyo.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F22BBF223ECD44A00FE84FD /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				9FD7A6E723ED07580065D112 /* InfoPlist.strings */,
+				9FD7A6EE23ED57540065D112 /* Localizable.strings */,
+				9FD4A8BB23E77D2300CB145B /* StatusMenu.xib */,
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		9FD4A8AA23E77D2200CB145B = {
+			isa = PBXGroup;
+			children = (
+				9F22BBEE23ECCC0700FE84FD /* README.md */,
+				9F22BBEF23ECD3B200FE84FD /* LICENSE */,
+				9FD4A8B523E77D2200CB145B /* Rokuyo */,
+				9FD4A8B423E77D2200CB145B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FD4A8B423E77D2200CB145B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FD4A8B323E77D2200CB145B /* Rokuyo Clock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FD4A8B523E77D2200CB145B /* Rokuyo */ = {
+			isa = PBXGroup;
+			children = (
+				9FD7A6E123ED064D0065D112 /* Info.plist */,
+				9F22BBF023ECD3CC00FE84FD /* Sources */,
+				9F22BBF123ECD43400FE84FD /* Resources */,
+				9F22BBF223ECD44A00FE84FD /* Translations */,
+			);
+			path = Rokuyo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FD4A8B223E77D2200CB145B /* Rokuyo Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD4A8C423E77D2300CB145B /* Build configuration list for PBXNativeTarget "Rokuyo Clock" */;
+			buildPhases = (
+				9FD4A8AF23E77D2200CB145B /* Sources */,
+				9FD4A8B023E77D2200CB145B /* Frameworks */,
+				9FD4A8B123E77D2200CB145B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rokuyo Clock";
+			productName = Rokuyo;
+			productReference = 9FD4A8B323E77D2200CB145B /* Rokuyo Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FD4A8AB23E77D2200CB145B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "ilammy's tearoom";
+				TargetAttributes = {
+					9FD4A8B223E77D2200CB145B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9FD4A8AE23E77D2200CB145B /* Build configuration list for PBXProject "Rokuyo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FD4A8AA23E77D2200CB145B;
+			productRefGroup = 9FD4A8B423E77D2200CB145B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FD4A8B223E77D2200CB145B /* Rokuyo Clock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FD4A8B123E77D2200CB145B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD4A8BA23E77D2300CB145B /* Assets.xcassets in Resources */,
+				9FD7A6EC23ED57540065D112 /* Localizable.strings in Resources */,
+				9FD7A6E923ED08A20065D112 /* InfoPlist.strings in Resources */,
+				9FD4A8BD23E77D2300CB145B /* StatusMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FD4A8AF23E77D2200CB145B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD4A8CF23E856CC00CB145B /* DateFormatter.m in Sources */,
+				9FD4A8C023E77D2300CB145B /* main.m in Sources */,
+				9FD4A8B823E77D2200CB145B /* AppDelegate.m in Sources */,
+				9FD4A8CC23E8149600CB145B /* NSDate+Extra.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9FD4A8BB23E77D2300CB145B /* StatusMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD4A8BC23E77D2300CB145B /* Base */,
+				9FD7A6DC23ECFF660065D112 /* en */,
+			);
+			name = StatusMenu.xib;
+			sourceTree = "<group>";
+		};
+		9FD7A6E723ED07580065D112 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD7A6E623ED07580065D112 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9FD7A6EE23ED57540065D112 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD7A6ED23ED57540065D112 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FD4A8C223E77D2300CB145B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9FD4A8C323E77D2300CB145B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9FD4A8C523E77D2300CB145B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Rokuyo/Resources/Rokuyo.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Rokuyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.ilammy.RokuyoClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9FD4A8C623E77D2300CB145B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Rokuyo/Resources/Rokuyo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZBRQV5H93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Rokuyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.ilammy.RokuyoClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FD4A8AE23E77D2200CB145B /* Build configuration list for PBXProject "Rokuyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD4A8C223E77D2300CB145B /* Debug */,
+				9FD4A8C323E77D2300CB145B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD4A8C423E77D2300CB145B /* Build configuration list for PBXNativeTarget "Rokuyo Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD4A8C523E77D2300CB145B /* Debug */,
+				9FD4A8C623E77D2300CB145B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FD4A8AB23E77D2200CB145B /* Project object */;
+}
