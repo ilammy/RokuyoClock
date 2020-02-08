@@ -1,0 +1,50 @@
+/* {Rokuyo}: {fortune} */
+"%@: %@" = "%1$@: %2$@";
+
+/* Rokuyo 1 */
+"Sensho" = "先勝";
+
+/* Rokuyo 2 */
+"Tomobiki" = "友引";
+
+/* Rokuyo 3 */
+"Sembu" = "先負";
+
+/* Rokuyo 4 */
+"Butsumetsu" = "仏滅";
+
+/* Rokuyo 5 */
+"Taian" = "大安";
+
+/* Rokuyo 6 */
+"Shakku" = "赤口";
+
+"luck is fickle now" = "運が不順";
+
+"bad luck whole day" = "日中は凶";
+
+"bad luck since noon" = "午後は凶";
+
+"bad luck till noon" = "午前は凶";
+
+"bad luck for the noon" = "正午は凶";
+
+"good luck whole day" = "日中は吉";
+
+"good luck since noon" = "午後は吉";
+
+"good luck till noon" = "午前は吉";
+
+"good luck for the noon" = "正午は吉";
+
+/* Day 1 */
+"The 1st day" = "一日目";
+
+/* Day 1 */
+"First day of the conference" = "親族会議の一日目";
+
+/* Day 2 */
+"The 2nd day" = "二日目";
+
+/* Day 2 */
+"Second day of the conference" = "親族会議の二日目";

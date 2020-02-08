@@ -22,9 +22,6 @@
     if (self) {
         self.formatStringLock = [NSLock new];
 
-        // This is important to get capitalization right
-        self.formattingContext = NSFormattingContextListItem;
-
         // Automatically track locale updates, some properties depend on that
         self.locale = NSLocale.autoupdatingCurrentLocale;
         [NSNotificationCenter.defaultCenter addObserver:self

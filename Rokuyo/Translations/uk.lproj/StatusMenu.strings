@@ -1,51 +1,51 @@
 
 /* Class = "NSTextFieldCell"; title = "Date options:"; ObjectID = "0uX-Kt-dzf"; */
-"0uX-Kt-dzf.title" = "Date options:";
+"0uX-Kt-dzf.title" = "Вигляд дати:";
 
 /* Class = "NSButtonCell"; title = "Show AM/PM"; ObjectID = "2m4-4g-tP0"; */
-"2m4-4g-tP0.title" = "Show AM/PM";
+"2m4-4g-tP0.title" = "дп/пп";
 
 /* Class = "NSButtonCell"; title = "Display seconds"; ObjectID = "Cal-EA-jy3"; */
-"Cal-EA-jy3.title" = "Display seconds";
+"Cal-EA-jy3.title" = "з секундами";
 
 /* Class = "NSButtonCell"; title = "Show date"; ObjectID = "HU4-v0-7CW"; */
-"HU4-v0-7CW.title" = "Show date";
+"HU4-v0-7CW.title" = "день місяця";
 
 /* Class = "NSMenuItem"; title = "Monday, February 3, 2020"; ObjectID = "HmI-3J-dmE"; */
-"HmI-3J-dmE.title" = "Monday, February 3, 2020";
+"HmI-3J-dmE.title" = "Понеділок, 3 лютого 2020 р.";
 
 /* Class = "NSTextFieldCell"; title = "Time options:"; ObjectID = "L19-qu-3ha"; */
-"L19-qu-3ha.title" = "Time options:";
+"L19-qu-3ha.title" = "Відображення часу:";
 
 /* Class = "NSMenuItem"; title = "Butsumetsu: bad luck whole day"; ObjectID = "MKg-MQ-6Rs"; */
-"MKg-MQ-6Rs.title" = "Butsumetsu: bad luck whole day";
+"MKg-MQ-6Rs.title" = "Буцумецу: невдалий день";
 
 /* Class = "NSButtonCell"; title = "Show rokuyo"; ObjectID = "WZS-J9-f4h"; */
-"WZS-J9-f4h.title" = "Show rokuyo day";
+"WZS-J9-f4h.title" = "день рокуйо";
 
 /* Class = "NSWindow"; title = "Clock Preferences"; ObjectID = "aHY-wv-ybN"; */
-"aHY-wv-ybN.title" = "Clock Preferences";
+"aHY-wv-ybN.title" = "Параметри годинника";
 
 /* Class = "NSMenuItem"; title = "Open System Preferences..."; ObjectID = "aL8-P5-93N"; */
-"aL8-P5-93N.title" = "Open System Preferences…";
+"aL8-P5-93N.title" = "Системні параметри…";
 
 /* Class = "NSTextFieldCell"; title = "Disabled by the time format setting in Language & Region"; ObjectID = "f2O-O0-ioQ"; */
-"f2O-O0-ioQ.title" = "Disabled by the time format setting in Language & Region";
+"f2O-O0-ioQ.title" = "Вимкнено за форматом часу в параметрах Мови і регіону";
 
 /* Class = "NSButtonCell"; title = "Show day of the week"; ObjectID = "gUY-zA-4yp"; */
-"gUY-zA-4yp.title" = "Show day of the week";
+"gUY-zA-4yp.title" = "день тижня";
 
 /* Class = "NSMenuItem"; title = "Special day item"; ObjectID = "hHg-wJ-k8Q"; */
-"hHg-wJ-k8Q.title" = "Special day item";
+"hHg-wJ-k8Q.title" = "Сьогодні особливий день";
 
 /* Class = "NSMenuItem"; title = "Open Clock Preferences..."; ObjectID = "iNr-bb-6tw"; */
-"iNr-bb-6tw.title" = "Open Clock Preferences…";
+"iNr-bb-6tw.title" = "Параметри годинника…";
 
 /* Class = "NSButtonCell"; title = "Show week number"; ObjectID = "qQF-qd-C27"; */
-"qQF-qd-C27.title" = "Show week number";
+"qQF-qd-C27.title" = "номер тижня";
 
 /* Class = "NSButtonCell"; title = "Use 24-hour clock"; ObjectID = "sgc-uL-vqK"; */
-"sgc-uL-vqK.title" = "Use 24-hour clock";
+"sgc-uL-vqK.title" = "24 години";
 
 /* Class = "NSButtonCell"; title = "Quit Clock"; ObjectID = "xd1-cX-Ny5"; */
-"xd1-cX-Ny5.title" = "Quit Clock";
+"xd1-cX-Ny5.title" = "Завершити годинник";

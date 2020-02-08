@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="localizable" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="clockPreferences" destination="aHY-wv-ybN" id="Cbe-xh-VRj"/>
+                <outlet property="currentLuckItem" destination="MKg-MQ-6Rs" id="JFg-Jp-rPU"/>
+                <outlet property="fullDateItem" destination="HmI-3J-dmE" id="VAQ-KS-zwL"/>
+                <outlet property="specialDayItem" destination="hHg-wJ-k8Q" id="Oe6-qO-j3c"/>
+                <outlet property="statusMenu" destination="HHZ-zF-ZC1" id="OMc-DB-osT"/>
+            </connections>
+        </customObject>
+        <menu id="HHZ-zF-ZC1" propertyAccessControl="localizable">
+            <items>
+                <menuItem title="2020年2月3日 月曜日" enabled="NO" id="HmI-3J-dmE" propertyAccessControl="none">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="特別の日" hidden="YES" enabled="NO" id="hHg-wJ-k8Q" propertyAccessControl="none">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="仏滅: 日中は凶" enabled="NO" id="MKg-MQ-6Rs" propertyAccessControl="none">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="ZxO-4D-jYt" propertyAccessControl="none"/>
+                <menuItem title="時計の設定…" id="iNr-bb-6tw" propertyAccessControl="none">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openClockPreferences:" target="Voe-Tx-rLC" id="7AS-yF-7aT"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="5KJ-D0-M7X" propertyAccessControl="none"/>
+                <menuItem title="システム環境設定…" id="aL8-P5-93N" propertyAccessControl="none">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openDateTimePreferences:" target="Voe-Tx-rLC" id="lcF-la-NFV"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="146" y="6"/>
+        </menu>
+        <window title="時計の設定" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="aHY-wv-ybN" customClass="NSPanel" propertyAccessControl="localizable">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" nonactivatingPanel="YES" HUD="YES"/>
+            <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="1150" y="535" width="191" height="314"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N55-Io-VTF" propertyAccessControl="localizable">
+                <rect key="frame" x="0.0" y="0.0" width="212" height="320"/>
+                <subviews>
+                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Me1-4f-3Vs" propertyAccessControl="localizable">
+                        <rect key="frame" x="20" y="70" width="172" height="230"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="StQ-y7-lkH" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="214" width="128" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="日付部分のオプション:" id="0uX-Kt-dzf">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="21w-v6-2Ue" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="190" width="47" height="18"/>
+                                <buttonCell key="cell" type="check" title="週番" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qQF-qd-C27">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showWeekNumber" id="zlp-Db-lf5"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-Uc-PSU" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="168" width="47" height="18"/>
+                                <buttonCell key="cell" type="check" title="六曜" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WZS-J9-f4h">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showRokuyo" id="xsf-kY-bW5"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-Y0-rNS" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="146" width="47" height="18"/>
+                                <buttonCell key="cell" type="check" title="日付" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="HU4-v0-7CW">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showDate" id="aiM-Pb-2Y6"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-AY-XGI" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="124" width="47" height="18"/>
+                                <buttonCell key="cell" type="check" title="曜日" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gUY-zA-4yp">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showDayOfWeek" id="JDr-LD-x7d"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KJQ-Dt-ZgE" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="102" width="104" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="時刻のオプション:" id="L19-qu-3ha">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yfw-UG-mKP" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="78" width="71" height="18"/>
+                                <buttonCell key="cell" type="check" title="秒を表示" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Cal-EA-jy3">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showSeconds" id="v1T-0j-luO"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="abR-aM-LP6" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="56" width="86" height="18"/>
+                                <buttonCell key="cell" type="check" title="24時間表示" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="sgc-uL-vqK">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="statusTimeFormatter.alwaysHours24" id="Sbg-Bz-5WH">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.useHours24" id="HFR-Mt-739"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-aR-oKa" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="34" width="75" height="18"/>
+                                <buttonCell key="cell" type="check" title="午前/午後" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2m4-4g-tP0">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Voe-Tx-rLC" name="enabled2" keyPath="statusTimeFormatter.alwaysAMPM" previousBinding="Ved-1e-cba" id="all-BN-05P">
+                                        <dictionary key="options">
+                                            <integer key="NSMultipleValuesPlaceholder" value="-1"/>
+                                            <integer key="NSNoSelectionPlaceholder" value="-1"/>
+                                            <integer key="NSNotApplicablePlaceholder" value="-1"/>
+                                            <integer key="NSNullPlaceholder" value="-1"/>
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysHours24" previousBinding="all-BN-05P" id="QYn-Ol-W8S"/>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showAMPM" id="rDK-AE-I4R"/>
+                                    <binding destination="Qsy-3N-CRB" name="enabled" keyPath="values.useHours24" id="Ved-1e-cba">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" preferredMaxLayoutWidth="140" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-Y3-PyU" propertyAccessControl="localizable">
+                                <rect key="frame" x="17" y="0.0" width="137" height="28"/>
+                                <textFieldCell key="cell" title="“言語と地域”で時刻の書式設定により無効化" id="f2O-O0-ioQ">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysHours24" id="2av-Us-2B2">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Zm-Y3-PyU" firstAttribute="leading" secondItem="abR-aM-LP6" secondAttribute="leading" constant="19" id="Hib-sK-Fru"/>
+                            <constraint firstAttribute="trailing" secondItem="3Zm-Y3-PyU" secondAttribute="trailing" constant="20" symbolic="YES" id="ptn-V2-1bD"/>
+                        </constraints>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                    <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="eZW-3b-pZO">
+                        <rect key="frame" x="20" y="59" width="172" height="5"/>
+                    </box>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-lX-G1m" propertyAccessControl="localizable">
+                        <rect key="frame" x="97" y="13" width="101" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="PVR-c3-QlQ"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="時計を終了" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xd1-cX-Ny5">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="quitClock:" target="Voe-Tx-rLC" id="exV-8l-DDv"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ccn-lX-G1m" secondAttribute="bottom" constant="20" symbolic="YES" id="2R0-3o-dTn"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="leading" secondItem="eZW-3b-pZO" secondAttribute="leading" id="8LP-py-FA6"/>
+                    <constraint firstAttribute="trailing" secondItem="ccn-lX-G1m" secondAttribute="trailing" constant="20" symbolic="YES" id="Cx5-rl-8fh"/>
+                    <constraint firstAttribute="trailing" secondItem="Me1-4f-3Vs" secondAttribute="trailing" constant="20" symbolic="YES" id="D4q-om-wnS"/>
+                    <constraint firstItem="eZW-3b-pZO" firstAttribute="top" secondItem="Me1-4f-3Vs" secondAttribute="bottom" constant="8" symbolic="YES" id="DcS-47-nm0"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="HCU-aT-JqE"/>
+                    <constraint firstItem="ccn-lX-G1m" firstAttribute="top" secondItem="eZW-3b-pZO" secondAttribute="bottom" constant="20" symbolic="YES" id="fxe-LU-ihw"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="top" secondItem="N55-Io-VTF" secondAttribute="top" constant="20" symbolic="YES" id="j35-eG-8Xn"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="trailing" secondItem="eZW-3b-pZO" secondAttribute="trailing" id="unE-Ob-69a"/>
+                    <constraint firstItem="ccn-lX-G1m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="yQJ-hy-yKx"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="146" y="-304"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="Qsy-3N-CRB"/>
+    </objects>
+</document>

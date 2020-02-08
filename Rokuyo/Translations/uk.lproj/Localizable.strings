@@ -1,0 +1,50 @@
+/* {Rokuyo}: {fortune} */
+"%@: %@" = "%1$@: %2$@";
+
+/* Rokuyo 1 */
+"Sensho" = "Сеншьо";
+
+/* Rokuyo 2 */
+"Tomobiki" = "Томобікі";
+
+/* Rokuyo 3 */
+"Sembu" = "Сембу";
+
+/* Rokuyo 4 */
+"Butsumetsu" = "Буцумецу";
+
+/* Rokuyo 5 */
+"Taian" = "Таіян";
+
+/* Rokuyo 6 */
+"Shakku" = "Шякку";
+
+"luck is fickle now" = "вдача мінлива";
+
+"bad luck whole day" = "невдалий день";
+
+"bad luck since noon" = "невдача після обіду";
+
+"bad luck till noon" = "невдалий ранок";
+
+"bad luck for the noon" = "невдача серед дня";
+
+"good luck whole day" = "весь день вдалий";
+
+"good luck since noon" = "гарна вдача після обіду";
+
+"good luck till noon" = "вранці гарна вдача";
+
+"good luck for the noon" = "вдача серед дня";
+
+/* Day 1 */
+"The 1st day" = "1-й день";
+
+/* Day 1 */
+"First day of the conference" = "Перший день конференції";
+
+/* Day 2 */
+"The 2nd day" = "2-й день";
+
+/* Day 2 */
+"Second day of the conference" = "Другий день конференції";

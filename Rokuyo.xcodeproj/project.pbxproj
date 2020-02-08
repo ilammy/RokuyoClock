@@ -21,6 +21,15 @@
 		9F22BBEE23ECCC0700FE84FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F22BBEF23ECD3B200FE84FD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9F2EDCD123EEE1FD00FD0397 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StatusMenu.strings; sourceTree = "<group>"; };
+		9F2EDCD223EEEEB700FD0397 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/StatusMenu.strings; sourceTree = "<group>"; };
+		9F2EDCD323EEEEB700FD0397 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F2EDCD423EEEEB700FD0397 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9F2EDCD523EEF9E000FD0397 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F2EDCD623EEF9E000FD0397 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9F2EDCD723EEF9E000FD0397 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/StatusMenu.strings; sourceTree = "<group>"; };
+		9F2EDCD923EEFE6C00FD0397 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F2EDCDA23EEFE6C00FD0397 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9F2EDCDB23EF085F00FD0397 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/StatusMenu.xib; sourceTree = "<group>"; };
 		9FD4A8B323E77D2200CB145B /* Rokuyo Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rokuyo Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD4A8B623E77D2200CB145B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9FD4A8B723E77D2200CB145B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -151,6 +160,9 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
+				ru,
+				ja,
 			);
 			mainGroup = 9FD4A8AA23E77D2200CB145B;
 			productRefGroup = 9FD4A8B423E77D2200CB145B /* Products */;
@@ -196,6 +208,9 @@
 			children = (
 				9FD4A8BC23E77D2300CB145B /* Base */,
 				9F2EDCD123EEE1FD00FD0397 /* en */,
+				9F2EDCD223EEEEB700FD0397 /* uk */,
+				9F2EDCD723EEF9E000FD0397 /* ru */,
+				9F2EDCDB23EF085F00FD0397 /* ja */,
 			);
 			name = StatusMenu.xib;
 			sourceTree = "<group>";
@@ -204,6 +219,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FD7A6E623ED07580065D112 /* en */,
+				9F2EDCD323EEEEB700FD0397 /* uk */,
+				9F2EDCD523EEF9E000FD0397 /* ru */,
+				9F2EDCD923EEFE6C00FD0397 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -212,6 +230,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FD7A6ED23ED57540065D112 /* en */,
+				9F2EDCD423EEEEB700FD0397 /* uk */,
+				9F2EDCD623EEF9E000FD0397 /* ru */,
+				9F2EDCDA23EEFE6C00FD0397 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -223,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -281,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

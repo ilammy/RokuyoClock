@@ -1,0 +1,5 @@
+/* App name as displayed in the system */
+CFBundleName = "Часы с рокуйо";
+
+/* Bundle copyright information */
+NSHumanReadableCopyright = "© 2020 Чайная Иламми";

@@ -37,10 +37,12 @@ static const NSTimeInterval timerTickInterval = 0.1f;
     self.statusItem.menu = self.statusMenu;
 
     self.statusTimeFormatter = [DateFormatter new];
+    self.statusTimeFormatter.formattingContext = NSFormattingContextListItem;
 
     self.fullDateFormatter = [NSDateFormatter new];
     self.fullDateFormatter.dateStyle = NSDateFormatterFullStyle;
     self.fullDateFormatter.timeStyle = NSDateFormatterNoStyle;
+    self.fullDateFormatter.formattingContext = NSFormattingContextListItem;
 
     [NSRunLoop.currentRunLoop
      addTimer:[NSTimer timerWithTimeInterval:timerTickInterval
