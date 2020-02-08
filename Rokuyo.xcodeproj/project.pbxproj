@@ -20,6 +20,7 @@
 /* Begin PBXFileReference section */
 		9F22BBEE23ECCC0700FE84FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F22BBEF23ECD3B200FE84FD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9F2EDCD123EEE1FD00FD0397 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StatusMenu.strings; sourceTree = "<group>"; };
 		9FD4A8B323E77D2200CB145B /* Rokuyo Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rokuyo Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD4A8B623E77D2200CB145B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9FD4A8B723E77D2200CB145B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		9FD4A8CB23E8149600CB145B /* NSDate+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extra.m"; sourceTree = "<group>"; };
 		9FD4A8CD23E856CC00CB145B /* DateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateFormatter.h; sourceTree = "<group>"; };
 		9FD4A8CE23E856CC00CB145B /* DateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateFormatter.m; sourceTree = "<group>"; };
-		9FD7A6DC23ECFF660065D112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StatusMenu.strings; sourceTree = "<group>"; };
 		9FD7A6E123ED064D0065D112 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FD7A6E623ED07580065D112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FD7A6ED23ED57540065D112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9FD4A8BC23E77D2300CB145B /* Base */,
-				9FD7A6DC23ECFF660065D112 /* en */,
+				9F2EDCD123EEE1FD00FD0397 /* en */,
 			);
 			name = StatusMenu.xib;
 			sourceTree = "<group>";

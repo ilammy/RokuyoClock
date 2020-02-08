@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="localizable" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
@@ -22,7 +22,7 @@
                 <outlet property="statusMenu" destination="HHZ-zF-ZC1" id="OMc-DB-osT"/>
             </connections>
         </customObject>
-        <menu id="HHZ-zF-ZC1">
+        <menu id="HHZ-zF-ZC1" propertyAccessControl="localizable">
             <items>
                 <menuItem title="Monday, February 3, 2020" enabled="NO" id="HmI-3J-dmE">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -34,14 +34,14 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="ZxO-4D-jYt"/>
-                <menuItem title="Open Clock Preferences..." id="iNr-bb-6tw">
+                <menuItem title="Open Clock Preferences..." id="iNr-bb-6tw" propertyAccessControl="localizable">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="openClockPreferences:" target="Voe-Tx-rLC" id="7AS-yF-7aT"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="5KJ-D0-M7X"/>
-                <menuItem title="Open System Preferences..." id="aL8-P5-93N">
+                <menuItem title="Open System Preferences..." id="aL8-P5-93N" propertyAccessControl="localizable">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="openDateTimePreferences:" target="Voe-Tx-rLC" id="lcF-la-NFV"/>
@@ -50,109 +50,173 @@
             </items>
             <point key="canvasLocation" x="146" y="6"/>
         </menu>
-        <window title="Clock Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="aHY-wv-ybN" customClass="NSPanel">
+        <window title="Clock Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="aHY-wv-ybN" customClass="NSPanel" propertyAccessControl="localizable">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" nonactivatingPanel="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
-            <rect key="contentRect" x="1125" y="625" width="326" height="270"/>
+            <rect key="contentRect" x="1150" y="535" width="191" height="314"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
-            <view key="contentView" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N55-Io-VTF">
-                <rect key="frame" x="0.0" y="0.0" width="209" height="232"/>
+            <view key="contentView" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N55-Io-VTF" propertyAccessControl="localizable">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="314"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="21w-v6-2Ue">
-                        <rect key="frame" x="18" y="196" width="141" height="18"/>
-                        <buttonCell key="cell" type="check" title="Show week number" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qQF-qd-C27">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showWeekNumber" id="zlp-Db-lf5"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-Uc-PSU">
-                        <rect key="frame" x="18" y="176" width="104" height="18"/>
-                        <buttonCell key="cell" type="check" title="Show Rokuyo" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WZS-J9-f4h">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showRokuyo" id="xsf-kY-bW5"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-AY-XGI">
-                        <rect key="frame" x="18" y="156" width="155" height="18"/>
-                        <buttonCell key="cell" type="check" title="Show day of the week" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gUY-zA-4yp">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showDayOfWeek" id="JDr-LD-x7d"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-Y0-rNS">
-                        <rect key="frame" x="18" y="136" width="86" height="18"/>
-                        <buttonCell key="cell" type="check" title="Show date" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="HU4-v0-7CW">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showDate" id="aiM-Pb-2Y6"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yfw-UG-mKP">
-                        <rect key="frame" x="18" y="116" width="110" height="18"/>
-                        <buttonCell key="cell" type="check" title="Show seconds" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Cal-EA-jy3">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showSeconds" id="v1T-0j-luO"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="abR-aM-LP6">
-                        <rect key="frame" x="18" y="96" width="145" height="18"/>
-                        <buttonCell key="cell" type="check" title="Show 24-hour clock" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="sgc-uL-vqK">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <binding destination="Voe-Tx-rLC" name="enabled" keyPath="statusTimeFormatter.alwaysHours24" id="Sbg-Bz-5WH">
-                                <dictionary key="options">
-                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
-                                </dictionary>
-                            </binding>
-                            <binding destination="Qsy-3N-CRB" name="value" keyPath="values.useHours24" id="HFR-Mt-739"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-aR-oKa">
-                        <rect key="frame" x="18" y="76" width="103" height="18"/>
-                        <buttonCell key="cell" type="check" title="Show AM/PM" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2m4-4g-tP0">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <binding destination="Voe-Tx-rLC" name="enabled2" keyPath="statusTimeFormatter.alwaysAMPM" previousBinding="Ved-1e-cba" id="all-BN-05P">
-                                <dictionary key="options">
-                                    <integer key="NSMultipleValuesPlaceholder" value="-1"/>
-                                    <integer key="NSNoSelectionPlaceholder" value="-1"/>
-                                    <integer key="NSNotApplicablePlaceholder" value="-1"/>
-                                    <integer key="NSNullPlaceholder" value="-1"/>
-                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
-                                </dictionary>
-                            </binding>
-                            <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysHours24" previousBinding="all-BN-05P" id="QYn-Ol-W8S"/>
-                            <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showAMPM" id="rDK-AE-I4R"/>
-                            <binding destination="Qsy-3N-CRB" name="enabled" keyPath="values.useHours24" id="Ved-1e-cba">
-                                <dictionary key="options">
-                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </button>
-                    <box verticalHuggingPriority="750" ambiguous="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="eZW-3b-pZO">
-                        <rect key="frame" x="12" y="59" width="127" height="5"/>
+                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Me1-4f-3Vs" propertyAccessControl="localizable">
+                        <rect key="frame" x="20" y="70" width="168" height="224"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="StQ-y7-lkH" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="208" width="85" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Date options:" id="0uX-Kt-dzf">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="21w-v6-2Ue" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="184" width="141" height="18"/>
+                                <buttonCell key="cell" type="check" title="Show week number" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qQF-qd-C27">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showWeekNumber" id="zlp-Db-lf5"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-Uc-PSU" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="162" width="100" height="18"/>
+                                <buttonCell key="cell" type="check" title="Show rokuyo" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WZS-J9-f4h">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showRokuyo" id="xsf-kY-bW5"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-AY-XGI" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="140" width="155" height="18"/>
+                                <buttonCell key="cell" type="check" title="Show day of the week" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gUY-zA-4yp">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showDayOfWeek" id="JDr-LD-x7d"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-Y0-rNS" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="118" width="86" height="18"/>
+                                <buttonCell key="cell" type="check" title="Show date" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="HU4-v0-7CW">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showDate" id="aiM-Pb-2Y6"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KJQ-Dt-ZgE" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="96" width="87" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Time options:" id="L19-qu-3ha">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yfw-UG-mKP" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="72" width="121" height="18"/>
+                                <buttonCell key="cell" type="check" title="Display seconds" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Cal-EA-jy3">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showSeconds" id="v1T-0j-luO"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="abR-aM-LP6" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="50" width="135" height="18"/>
+                                <buttonCell key="cell" type="check" title="Use 24-hour clock" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="sgc-uL-vqK">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="statusTimeFormatter.alwaysHours24" id="Sbg-Bz-5WH">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.useHours24" id="HFR-Mt-739"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-aR-oKa" propertyAccessControl="localizable">
+                                <rect key="frame" x="-2" y="28" width="103" height="18"/>
+                                <buttonCell key="cell" type="check" title="Show AM/PM" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2m4-4g-tP0">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="Voe-Tx-rLC" name="enabled2" keyPath="statusTimeFormatter.alwaysAMPM" previousBinding="Ved-1e-cba" id="all-BN-05P">
+                                        <dictionary key="options">
+                                            <integer key="NSMultipleValuesPlaceholder" value="-1"/>
+                                            <integer key="NSNoSelectionPlaceholder" value="-1"/>
+                                            <integer key="NSNotApplicablePlaceholder" value="-1"/>
+                                            <integer key="NSNullPlaceholder" value="-1"/>
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysHours24" previousBinding="all-BN-05P" id="QYn-Ol-W8S"/>
+                                    <binding destination="Qsy-3N-CRB" name="value" keyPath="values.showAMPM" id="rDK-AE-I4R"/>
+                                    <binding destination="Qsy-3N-CRB" name="enabled" keyPath="values.useHours24" id="Ved-1e-cba">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-Y3-PyU" propertyAccessControl="localizable">
+                                <rect key="frame" x="17" y="0.0" width="133" height="22"/>
+                                <textFieldCell key="cell" title="Disabled by the time format setting in Language &amp; Region" id="f2O-O0-ioQ">
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysHours24" id="2av-Us-2B2">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Zm-Y3-PyU" firstAttribute="leading" secondItem="abR-aM-LP6" secondAttribute="leading" constant="19" id="Hib-sK-Fru"/>
+                            <constraint firstAttribute="trailing" secondItem="3Zm-Y3-PyU" secondAttribute="trailing" constant="20" symbolic="YES" id="ptn-V2-1bD"/>
+                        </constraints>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                    <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="eZW-3b-pZO">
+                        <rect key="frame" x="20" y="59" width="168" height="5"/>
                     </box>
-                    <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-lX-G1m">
-                        <rect key="frame" x="195" y="13" width="104" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-lX-G1m" propertyAccessControl="localizable">
+                        <rect key="frame" x="90" y="13" width="104" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="PVR-c3-QlQ"/>
                         </constraints>
@@ -164,61 +228,21 @@
                             <action selector="quitClock:" target="Voe-Tx-rLC" id="exV-8l-DDv"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-Y3-PyU">
-                        <rect key="frame" x="37" y="70" width="154" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="1iq-zb-scu"/>
-                        </constraints>
-                        <textFieldCell key="cell" title="Disabled by the time format setting in Language &amp; Region" id="f2O-O0-ioQ">
-                            <font key="font" metaFont="miniSystem"/>
-                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysHours24" id="2av-Us-2B2">
-                                <dictionary key="options">
-                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
-                                </dictionary>
-                            </binding>
-                        </connections>
-                    </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Yfw-UG-mKP" firstAttribute="top" secondItem="Idj-Y0-rNS" secondAttribute="bottom" constant="6" symbolic="YES" id="3DL-dr-K6L"/>
-                    <constraint firstItem="Yfw-UG-mKP" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="4DT-U1-qZd"/>
-                    <constraint firstItem="21w-v6-2Ue" firstAttribute="top" secondItem="N55-Io-VTF" secondAttribute="top" constant="20" symbolic="YES" id="7SS-GU-JGP"/>
-                    <constraint firstItem="21w-v6-2Ue" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="99D-Bp-GwK"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Yfw-UG-mKP" secondAttribute="trailing" constant="20" symbolic="YES" id="9Zk-72-zr1"/>
-                    <constraint firstItem="xAY-AY-XGI" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="Dwa-sw-Byg"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="21w-v6-2Ue" secondAttribute="trailing" constant="20" symbolic="YES" id="GA6-Ve-X6y"/>
-                    <constraint firstItem="3Zm-Y3-PyU" firstAttribute="leading" secondItem="dR4-aR-oKa" secondAttribute="leading" constant="19" id="Gkz-Mx-exV"/>
-                    <constraint firstAttribute="bottom" secondItem="ccn-lX-G1m" secondAttribute="bottom" constant="20" symbolic="YES" id="H70-8N-Y6h"/>
-                    <constraint firstItem="abR-aM-LP6" firstAttribute="top" secondItem="Yfw-UG-mKP" secondAttribute="bottom" constant="6" symbolic="YES" id="HYP-tX-4iW"/>
-                    <constraint firstItem="xAY-AY-XGI" firstAttribute="top" secondItem="lYY-Uc-PSU" secondAttribute="bottom" constant="6" symbolic="YES" id="J7N-mf-dwu"/>
-                    <constraint firstAttribute="trailing" secondItem="ccn-lX-G1m" secondAttribute="trailing" constant="20" symbolic="YES" id="NZW-NG-c22"/>
-                    <constraint firstItem="ccn-lX-G1m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="O3J-K8-WYE"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xAY-AY-XGI" secondAttribute="trailing" constant="20" symbolic="YES" id="Qte-Hy-VrF"/>
-                    <constraint firstItem="lYY-Uc-PSU" firstAttribute="top" secondItem="21w-v6-2Ue" secondAttribute="bottom" constant="6" symbolic="YES" id="VN9-Sj-UTe"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="abR-aM-LP6" secondAttribute="trailing" constant="20" symbolic="YES" id="W92-Fg-bMu"/>
-                    <constraint firstItem="dR4-aR-oKa" firstAttribute="top" secondItem="abR-aM-LP6" secondAttribute="bottom" constant="6" symbolic="YES" id="XiE-Ba-0ab"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Idj-Y0-rNS" secondAttribute="trailing" constant="20" symbolic="YES" id="dLD-9c-2D2"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lYY-Uc-PSU" secondAttribute="trailing" constant="20" symbolic="YES" id="eCj-zq-FYg"/>
-                    <constraint firstItem="dR4-aR-oKa" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="gI9-Z5-NwG"/>
-                    <constraint firstItem="eZW-3b-pZO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dR4-aR-oKa" secondAttribute="bottom" constant="8" symbolic="YES" id="h1E-dg-cCC"/>
-                    <constraint firstItem="ccn-lX-G1m" firstAttribute="top" secondItem="eZW-3b-pZO" secondAttribute="bottom" constant="20" symbolic="YES" id="j6b-Ed-LRo"/>
-                    <constraint firstItem="Idj-Y0-rNS" firstAttribute="top" secondItem="xAY-AY-XGI" secondAttribute="bottom" constant="6" symbolic="YES" id="jr9-ET-iPl"/>
-                    <constraint firstItem="abR-aM-LP6" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="oIf-bu-h9S"/>
-                    <constraint firstAttribute="trailing" secondItem="eZW-3b-pZO" secondAttribute="trailing" constant="12" symbolic="YES" id="obz-Wy-Ukz"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dR4-aR-oKa" secondAttribute="trailing" constant="20" symbolic="YES" id="pAt-GP-ogC"/>
-                    <constraint firstItem="Idj-Y0-rNS" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="qwl-bn-TXy"/>
-                    <constraint firstItem="eZW-3b-pZO" firstAttribute="top" secondItem="3Zm-Y3-PyU" secondAttribute="bottom" constant="8" symbolic="YES" id="rp3-LM-aGY"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Zm-Y3-PyU" secondAttribute="trailing" constant="20" symbolic="YES" id="rsF-b5-6QG"/>
-                    <constraint firstItem="3Zm-Y3-PyU" firstAttribute="top" secondItem="abR-aM-LP6" secondAttribute="bottom" constant="6" id="vEj-3F-mZO"/>
-                    <constraint firstItem="lYY-Uc-PSU" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="xLG-BY-HYv"/>
-                    <constraint firstItem="eZW-3b-pZO" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="12" symbolic="YES" id="xvz-xP-tBq"/>
+                    <constraint firstAttribute="bottom" secondItem="ccn-lX-G1m" secondAttribute="bottom" constant="20" symbolic="YES" id="2R0-3o-dTn"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="leading" secondItem="eZW-3b-pZO" secondAttribute="leading" id="8LP-py-FA6"/>
+                    <constraint firstAttribute="trailing" secondItem="ccn-lX-G1m" secondAttribute="trailing" constant="20" symbolic="YES" id="Cx5-rl-8fh"/>
+                    <constraint firstAttribute="trailing" secondItem="Me1-4f-3Vs" secondAttribute="trailing" constant="20" symbolic="YES" id="D4q-om-wnS"/>
+                    <constraint firstItem="eZW-3b-pZO" firstAttribute="top" secondItem="Me1-4f-3Vs" secondAttribute="bottom" constant="8" symbolic="YES" id="DcS-47-nm0"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="leading" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="HCU-aT-JqE"/>
+                    <constraint firstItem="ccn-lX-G1m" firstAttribute="top" secondItem="eZW-3b-pZO" secondAttribute="bottom" constant="20" symbolic="YES" id="fxe-LU-ihw"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="top" secondItem="N55-Io-VTF" secondAttribute="top" constant="20" symbolic="YES" id="j35-eG-8Xn"/>
+                    <constraint firstItem="Me1-4f-3Vs" firstAttribute="trailing" secondItem="eZW-3b-pZO" secondAttribute="trailing" id="unE-Ob-69a"/>
+                    <constraint firstItem="ccn-lX-G1m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N55-Io-VTF" secondAttribute="leading" constant="20" symbolic="YES" id="yQJ-hy-yKx"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="204" y="-222"/>
+            <point key="canvasLocation" x="146" y="-304"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="Qsy-3N-CRB"/>
     </objects>

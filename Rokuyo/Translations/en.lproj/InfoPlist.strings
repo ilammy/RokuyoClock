@@ -2,4 +2,4 @@
 CFBundleName = "Rokuyo Clock";
 
 /* Bundle copyright information */
-NSHumanReadableCopyright = "© 2020 ilammy’s tearoom. All rights reserved.";
+NSHumanReadableCopyright = "© 2020 ilammy’s tearoom";

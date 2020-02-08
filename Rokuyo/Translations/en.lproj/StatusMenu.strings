@@ -1,44 +1,51 @@
-/* Class = "NSWindow"; */
-"aHY-wv-ybN.title" = "Clock Preferences";
 
-/* Class = "NSButtonCell"; */
-"qQF-qd-C27.title" = "Show week number";
+/* Class = "NSTextFieldCell"; title = "Date options:"; ObjectID = "0uX-Kt-dzf"; */
+"0uX-Kt-dzf.title" = "Date options:";
 
-/* Class = "NSButtonCell"; */
-"WZS-J9-f4h.title" = "Show Rokuyo";
-
-/* Class = "NSButtonCell"; */
-"gUY-zA-4yp.title" = "Show day of the week";
-
-/* Class = "NSButtonCell"; */
-"HU4-v0-7CW.title" = "Show date";
-
-/* Class = "NSButtonCell"; */
-"Cal-EA-jy3.title" = "Show seconds";
-
-/* Class = "NSButtonCell"; */
-"sgc-uL-vqK.title" = "Show 24-hour clock";
-
-/* Class = "NSButtonCell"; */
+/* Class = "NSButtonCell"; title = "Show AM/PM"; ObjectID = "2m4-4g-tP0"; */
 "2m4-4g-tP0.title" = "Show AM/PM";
 
-/* Class = "NSTextFieldCell"; */
-"f2O-O0-ioQ.title" = "Disabled by the time format setting in Language & Region";
+/* Class = "NSButtonCell"; title = "Display seconds"; ObjectID = "Cal-EA-jy3"; */
+"Cal-EA-jy3.title" = "Display seconds";
 
-/* Class = "NSButtonCell"; */
-"xd1-cX-Ny5.title" = "Quit Clock";
+/* Class = "NSButtonCell"; title = "Show date"; ObjectID = "HU4-v0-7CW"; */
+"HU4-v0-7CW.title" = "Show date";
 
-/* Class = "NSMenuItem"; */
+/* Class = "NSMenuItem"; title = "Monday, February 3, 2020"; ObjectID = "HmI-3J-dmE"; */
 "HmI-3J-dmE.title" = "Monday, February 3, 2020";
 
-/* Class = "NSMenuItem"; */
-"hHg-wJ-k8Q.title" = "Special day item";
+/* Class = "NSTextFieldCell"; title = "Time options:"; ObjectID = "L19-qu-3ha"; */
+"L19-qu-3ha.title" = "Time options:";
 
-/* Class = "NSMenuItem"; */
+/* Class = "NSMenuItem"; title = "Butsumetsu: bad luck whole day"; ObjectID = "MKg-MQ-6Rs"; */
 "MKg-MQ-6Rs.title" = "Butsumetsu: bad luck whole day";
 
-/* Class = "NSMenuItem"; */
-"iNr-bb-6tw.title" = "Open Clock Preferences...";
+/* Class = "NSButtonCell"; title = "Show rokuyo"; ObjectID = "WZS-J9-f4h"; */
+"WZS-J9-f4h.title" = "Show rokuyo";
 
-/* Class = "NSMenuItem"; */
-"aL8-P5-93N.title" = "Open System Preferences...";
+/* Class = "NSWindow"; title = "Clock Preferences"; ObjectID = "aHY-wv-ybN"; */
+"aHY-wv-ybN.title" = "Clock Preferences";
+
+/* Class = "NSMenuItem"; title = "Open System Preferences..."; ObjectID = "aL8-P5-93N"; */
+"aL8-P5-93N.title" = "Open System Preferences…";
+
+/* Class = "NSTextFieldCell"; title = "Disabled by the time format setting in Language & Region"; ObjectID = "f2O-O0-ioQ"; */
+"f2O-O0-ioQ.title" = "Disabled by the time format setting in Language & Region";
+
+/* Class = "NSButtonCell"; title = "Show day of the week"; ObjectID = "gUY-zA-4yp"; */
+"gUY-zA-4yp.title" = "Show day of the week";
+
+/* Class = "NSMenuItem"; title = "Special day item"; ObjectID = "hHg-wJ-k8Q"; */
+"hHg-wJ-k8Q.title" = "Special day item";
+
+/* Class = "NSMenuItem"; title = "Open Clock Preferences..."; ObjectID = "iNr-bb-6tw"; */
+"iNr-bb-6tw.title" = "Open Clock Preferences…";
+
+/* Class = "NSButtonCell"; title = "Show week number"; ObjectID = "qQF-qd-C27"; */
+"qQF-qd-C27.title" = "Show week number";
+
+/* Class = "NSButtonCell"; title = "Use 24-hour clock"; ObjectID = "sgc-uL-vqK"; */
+"sgc-uL-vqK.title" = "Use 24-hour clock";
+
+/* Class = "NSButtonCell"; title = "Quit Clock"; ObjectID = "xd1-cX-Ny5"; */
+"xd1-cX-Ny5.title" = "Quit Clock";
