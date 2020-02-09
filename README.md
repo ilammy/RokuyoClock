@@ -28,7 +28,7 @@ It’s your choice how to interpret them.
 4. Add your new clock to Login Items.
 5. Hide the standard clock.
 
-[here]: https://github.com/ilammy/RokuyoClock/releases/download/v1.0/Rokuyo%20Clock.app.zip
+[here]: https://github.com/ilammy/RokuyoClock/releases/download/v1.0/Rokuyo.Clock.app.zip
 
 Updates are not provided automatically to keep application size to minimum.
 Watch this GitHub project to be notified about new versions.
