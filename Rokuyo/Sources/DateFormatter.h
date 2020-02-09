@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Query date formatter's locale to see what time format it enforces
 @property (readonly) BOOL alwaysHours24;
+@property (readonly) BOOL alwaysHours12;
+@property (readonly) BOOL alwaysFixedHours;
 @property (readonly) BOOL alwaysAMPM;
 
 // Set the format to use. Overrides preferred format. Overridden by enforced format.

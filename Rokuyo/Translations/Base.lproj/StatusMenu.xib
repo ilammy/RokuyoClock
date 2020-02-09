@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="localizable" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
@@ -134,7 +134,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="statusTimeFormatter.alwaysHours24" id="Sbg-Bz-5WH">
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="statusTimeFormatter.alwaysFixedHours" id="kvz-nT-dbO">
                                         <dictionary key="options">
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
@@ -142,8 +142,23 @@
                                     <binding destination="Qsy-3N-CRB" name="value" keyPath="values.useHours24" id="HFR-Mt-739"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-Y3-PyU" propertyAccessControl="localizable">
+                                <rect key="frame" x="17" y="22" width="133" height="22"/>
+                                <textFieldCell key="cell" title="Disabled by the time format setting in Language &amp; Region" id="f2O-O0-ioQ">
+                                    <font key="font" metaFont="miniSystem"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysFixedHours" id="rSd-PC-cmK">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
+                            </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-aR-oKa" propertyAccessControl="localizable">
-                                <rect key="frame" x="-2" y="28" width="103" height="18"/>
+                                <rect key="frame" x="-2" y="-2" width="103" height="18"/>
                                 <buttonCell key="cell" type="check" title="Show AM/PM" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2m4-4g-tP0">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -167,21 +182,6 @@
                                     </binding>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-Y3-PyU" propertyAccessControl="localizable">
-                                <rect key="frame" x="17" y="0.0" width="133" height="22"/>
-                                <textFieldCell key="cell" title="Disabled by the time format setting in Language &amp; Region" id="f2O-O0-ioQ">
-                                    <font key="font" metaFont="miniSystem"/>
-                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <binding destination="Voe-Tx-rLC" name="hidden" keyPath="statusTimeFormatter.alwaysHours24" id="2av-Us-2B2">
-                                        <dictionary key="options">
-                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
-                                        </dictionary>
-                                    </binding>
-                                </connections>
-                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="3Zm-Y3-PyU" firstAttribute="leading" secondItem="abR-aM-LP6" secondAttribute="leading" constant="19" id="Hib-sK-Fru"/>

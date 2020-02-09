@@ -44,15 +44,21 @@ static const NSTimeInterval timerTickInterval = 0.1f;
     self.fullDateFormatter.timeStyle = NSDateFormatterNoStyle;
     self.fullDateFormatter.formattingContext = NSFormattingContextListItem;
 
+    // Register the timer for all common modes for it to fire regardless of
+    // whether the user has opened a menu somewhere or not.
     [NSRunLoop.currentRunLoop
      addTimer:[NSTimer timerWithTimeInterval:timerTickInterval
                                       target:self
                                     selector:@selector(clockTicking:)
                                     userInfo:nil
                                      repeats:YES]
-      forMode:NSDefaultRunLoopMode];
+      forMode:NSRunLoopCommonModes];
 
     [self registerUserDefaults];
+
+    // Give the clock initial value to display
+    [self updateTimeIndication];
+    [self updateSecondsFont];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification
@@ -99,9 +105,6 @@ static void *observeSecondsSetting = &observeSecondsSetting;
                                forKeyPath:@"showSeconds"
                                   options:0
                                   context:observeSecondsSetting];
-
-    // Give the clock initial value to display
-    [self updateTimeIndication];
 }
 
 - (void)unregisterUserDefaults
@@ -134,15 +137,7 @@ static void *observeSecondsSetting = &observeSecondsSetting;
     // snapping of clock indication when seconds are displayed. Use a monospaced
     // font when we display seconds, and a better-looking default one otherwise.
     if (context == observeSecondsSetting) {
-        CGFloat fontSize = self.statusItem.button.font.pointSize;
-        NSFont *newFont;
-        if (self.statusTimeFormatter.showSeconds) {
-            newFont = [NSFont monospacedDigitSystemFontOfSize:fontSize
-                                                       weight:NSFontWeightRegular];
-        } else {
-            newFont = [NSFont systemFontOfSize:fontSize];
-        }
-        self.statusItem.button.font = newFont;
+        [self updateSecondsFont];
         return;
     }
 
@@ -157,6 +152,19 @@ static void *observeSecondsSetting = &observeSecondsSetting;
 }
 
 #pragma mark - Time indication
+
+- (void)updateSecondsFont
+{
+    CGFloat fontSize = self.statusItem.button.font.pointSize;
+    NSFont *newFont;
+    if (self.statusTimeFormatter.showSeconds) {
+        newFont = [NSFont monospacedDigitSystemFontOfSize:fontSize
+                                                   weight:NSFontWeightRegular];
+    } else {
+        newFont = [NSFont systemFontOfSize:fontSize];
+    }
+    self.statusItem.button.font = newFont;
+}
 
 static inline BOOL indicatedSecondsEqual(NSDate *a, NSDate *b)
 {

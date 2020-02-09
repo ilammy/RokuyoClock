@@ -65,18 +65,16 @@
 // There is also "J" which is the same but without day period marker.
 // Additionally, they may be duplicated (e.g., "jj") to get zero-padded
 // two-digit form. There are other features but we don't make use of them.
+//
+// And yes, all of this is actually used. Some cultures prefer 12-hour clock,
+// some prefer 24-hour one, some enforce either format. Some prefer writing
+// their equivalent of AM/PM, some occasionally don't, some always do. Some
+// cultures use 0-based clock and some use 1-based one, sometimes different
+// based on whether it's 12-hour clock or 24-hour one. FFS, use ISO 8601!
 
 - (BOOL)prefersHours24
 {
     NSString *format = [self.class dateFormatFromTemplate:@"j:mm"
-                                                  options:0
-                                                   locale:self.locale];
-    return [format containsString:@"H"] || [format containsString:@"k"];
-}
-
-- (BOOL)alwaysHours24
-{
-    NSString *format = [self.class dateFormatFromTemplate:@"h:mm"
                                                   options:0
                                                    locale:self.locale];
     return [format containsString:@"H"] || [format containsString:@"k"];
@@ -88,6 +86,27 @@
                                                   options:0
                                                    locale:self.locale];
     return [format containsString:@"a"] || [format containsString:@"b"];
+}
+
+- (BOOL)alwaysHours24
+{
+    NSString *format = [self.class dateFormatFromTemplate:@"h:mm"
+                                                  options:0
+                                                   locale:self.locale];
+    return [format containsString:@"H"] || [format containsString:@"k"];
+}
+
+- (BOOL)alwaysHours12
+{
+    NSString *format = [self.class dateFormatFromTemplate:@"H:mm"
+                                                  options:0
+                                                   locale:self.locale];
+    return [format containsString:@"h"] || [format containsString:@"K"];
+}
+
+- (BOOL)alwaysFixedHours
+{
+    return self.alwaysHours24 || self.alwaysHours12;
 }
 
 - (BOOL)alwaysAMPM
@@ -103,7 +122,9 @@
     // Values of the properites above change depending on the current locale.
     // Make observers aware of the possible change (after-the-fact).
     NSArray<NSString *> *derivedProperties = @[
-        @"prefersHours24", @"prefersAMPM", @"alwaysHours24", @"alwaysAMPM",
+        @"prefersHours24", @"prefersAMPM",
+        @"alwaysHours24", @"alwaysHours12", @"alwaysFixedHours",
+        @"alwaysAMPM",
     ];
     for (NSString *property in derivedProperties) {
         [self willChangeValueForKey:property];
