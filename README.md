@@ -22,11 +22,13 @@ It’s your choice how to interpret them.
 
 ## 📦 Installing
 
-1. [Download the latest release](https://example.com). <!-- TODO: actual URL -->
+1. [Download the latest release][here].
 2. Double-click the app to launch the clock.
 3. Hold ⌘ and drag it where you want.
 4. Add your new clock to Login Items.
 5. Hide the standard clock.
+
+[here]: https://github.com/ilammy/RokuyoClock/releases/download/v1.0/Rokuyo%20Clock.app.zip
 
 Updates are not provided automatically to keep application size to minimum.
 Watch this GitHub project to be notified about new versions.
