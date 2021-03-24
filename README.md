@@ -50,4 +50,4 @@ It gets surprisingly tricky if you drill into details, locales, scripts, calenda
 
 ## 📄 License
 
-Rokuyo Clock is distributed under the terms of [**GNU GPL**](LICENSE) version 3 or any later version.
+Rokuyo Clock is distributed under the terms of [**GNU GPL**](LICENSE) version 3 (exactly).
